@@ -7,6 +7,7 @@
 //
 
 #import "TempViewController.h"
+#import "NSObject+AvoidCrash.h"
 
 NSString * printName(id self, SEL _cmd, NSString *oldName);
 
@@ -23,12 +24,38 @@ NSString * printName(id self, SEL _cmd, NSString *oldName);
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UIViewController *vc = [self performSelector:@selector(method:param1:param2:param3:)];
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(10, 100, 100, 100);
+    button.backgroundColor = [UIColor redColor];
+    [button addTarget:self action:@selector(push) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+    
+    __weak typeof(self)weakSelf = self;
+    
+    [self addDeallocJob:^{
+        NSLog(@"class:%@ dealloc",NSStringFromClass([weakSelf class]));
+    }];
+}
+
+- (void)push {
+    TempViewController *vc = [[TempViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 //    NSLog(@"%@:viewWillAppear",[self class]);
+    [NSArray arrayWithObjects:nil count:0];
+    
+    [UIView transitionWithView:[UIApplication sharedApplication].delegate.window duration:1 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        
+    } completion:^(BOOL finished) {
+        
+    }];
+    
+    [UIView transitionFromView:self.view toView:self.view duration:1 options:UIViewAnimationOptionCurveEaseIn completion:^(BOOL finished) {
+        
+    }];
 }
 
 //https://developer.apple.com/reference/objectivec/objective_c_runtime?language=objc

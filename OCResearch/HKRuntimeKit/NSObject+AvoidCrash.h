@@ -10,4 +10,6 @@
 
 @interface NSObject (AvoidCrash)
 
+- (void)addDeallocJob:(void(^)(void))deallocJob;
+
 @end

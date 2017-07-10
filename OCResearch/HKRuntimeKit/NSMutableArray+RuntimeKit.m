@@ -13,12 +13,12 @@
 
 //__NSArray0,__NSArrayM,__NSDictionary0,__NSDictionaryM
 + (void)load {
-    rk_replaceInstanceMethod(NSClassFromString(@"__NSArrayM"), @selector(objectAtIndex:), @selector(rk_mobjectAtIndex:));
+    rk_replaceInstanceMethod(NSClassFromString(@"__NSArrayM"), @selector(objectAtIndex:), @selector(rk_objectAtIndex:));
 }
 
-- (id)rk_mobjectAtIndex:(NSUInteger)index {
+- (id)rk_objectAtIndex:(NSUInteger)index {
     if (index < self.count) {
-        return [self rk_mobjectAtIndex:index];
+        return [self rk_objectAtIndex:index];
     }else {
         NSLog(@"NSMutableArray objectAtIndex 越界:%ld",index);
         return nil;

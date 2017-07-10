@@ -14,11 +14,17 @@
 		500BE01A1EF79598008F70A4 /* NSDictionary+RuntimeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 500BE0191EF79598008F70A4 /* NSDictionary+RuntimeKit.m */; };
 		500BE01D1EF795A9008F70A4 /* NSMutableArray+RuntimeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 500BE01C1EF795A9008F70A4 /* NSMutableArray+RuntimeKit.m */; };
 		500BE0201EF795BA008F70A4 /* NSMutableDictionary+RuntimeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 500BE01F1EF795BA008F70A4 /* NSMutableDictionary+RuntimeKit.m */; };
+		5025A7421F074C7D00F0CBFC /* HKDeallocProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5025A7411F074C7D00F0CBFC /* HKDeallocProxy.m */; };
 		50260C031EF3CA00003CD2A6 /* UIImage+RuntimeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 50260C021EF3CA00003CD2A6 /* UIImage+RuntimeKit.m */; };
 		50392B591ED2872F00049647 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50392B581ED2872F00049647 /* main.m */; };
 		50392B5C1ED2872F00049647 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50392B5B1ED2872F00049647 /* AppDelegate.m */; };
 		50392B641ED2872F00049647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50392B631ED2872F00049647 /* Assets.xcassets */; };
 		50392B671ED2872F00049647 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50392B651ED2872F00049647 /* LaunchScreen.storyboard */; };
+		509F82D81F0E3745002DBBC7 /* HKStubProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 509F82D71F0E3745002DBBC7 /* HKStubProxy.m */; };
+		509F82E51F0F476C002DBBC7 /* HKWeakArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 509F82E41F0F476C002DBBC7 /* HKWeakArray.m */; };
+		509F82E81F0F477B002DBBC7 /* HKWeakDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 509F82E71F0F477B002DBBC7 /* HKWeakDictionary.m */; };
+		509F82EB1F0F4786002DBBC7 /* HKWeakSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 509F82EA1F0F4786002DBBC7 /* HKWeakSet.m */; };
+		509F834D1F1340C6002DBBC7 /* HKProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 509F834C1F1340C6002DBBC7 /* HKProxy.m */; };
 		50A6DDF51ED2932C00D39B07 /* TempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A6DDF41ED2932C00D39B07 /* TempViewController.m */; };
 		50CEBE311EE97D0E003439B5 /* ConcurrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50CEBE301EE97D0E003439B5 /* ConcurrentViewController.m */; };
 		50DD15F51EFD3B0D007C196C /* NSObject+AvoidCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DD15F41EFD3B0D007C196C /* NSObject+AvoidCrash.m */; };
@@ -39,6 +45,8 @@
 		500BE01C1EF795A9008F70A4 /* NSMutableArray+RuntimeKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+RuntimeKit.m"; sourceTree = "<group>"; };
 		500BE01E1EF795BA008F70A4 /* NSMutableDictionary+RuntimeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+RuntimeKit.h"; sourceTree = "<group>"; };
 		500BE01F1EF795BA008F70A4 /* NSMutableDictionary+RuntimeKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+RuntimeKit.m"; sourceTree = "<group>"; };
+		5025A7401F074C7D00F0CBFC /* HKDeallocProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKDeallocProxy.h; sourceTree = "<group>"; };
+		5025A7411F074C7D00F0CBFC /* HKDeallocProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKDeallocProxy.m; sourceTree = "<group>"; };
 		50260C011EF3CA00003CD2A6 /* UIImage+RuntimeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RuntimeKit.h"; sourceTree = "<group>"; };
 		50260C021EF3CA00003CD2A6 /* UIImage+RuntimeKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RuntimeKit.m"; sourceTree = "<group>"; };
 		50392B541ED2872F00049647 /* OCResearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCResearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +56,16 @@
 		50392B631ED2872F00049647 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50392B661ED2872F00049647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50392B681ED2872F00049647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		509F82D61F0E3745002DBBC7 /* HKStubProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKStubProxy.h; sourceTree = "<group>"; };
+		509F82D71F0E3745002DBBC7 /* HKStubProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKStubProxy.m; sourceTree = "<group>"; };
+		509F82E31F0F476C002DBBC7 /* HKWeakArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKWeakArray.h; sourceTree = "<group>"; };
+		509F82E41F0F476C002DBBC7 /* HKWeakArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKWeakArray.m; sourceTree = "<group>"; };
+		509F82E61F0F477B002DBBC7 /* HKWeakDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKWeakDictionary.h; sourceTree = "<group>"; };
+		509F82E71F0F477B002DBBC7 /* HKWeakDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKWeakDictionary.m; sourceTree = "<group>"; };
+		509F82E91F0F4786002DBBC7 /* HKWeakSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKWeakSet.h; sourceTree = "<group>"; };
+		509F82EA1F0F4786002DBBC7 /* HKWeakSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKWeakSet.m; sourceTree = "<group>"; };
+		509F834B1F1340C6002DBBC7 /* HKProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKProxy.h; sourceTree = "<group>"; };
+		509F834C1F1340C6002DBBC7 /* HKProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKProxy.m; sourceTree = "<group>"; };
 		50A6DDF31ED2932C00D39B07 /* TempViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempViewController.h; sourceTree = "<group>"; };
 		50A6DDF41ED2932C00D39B07 /* TempViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempViewController.m; sourceTree = "<group>"; };
 		50CEBE2F1EE97D0E003439B5 /* ConcurrentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcurrentViewController.h; sourceTree = "<group>"; };
@@ -88,6 +106,10 @@
 				500BE01C1EF795A9008F70A4 /* NSMutableArray+RuntimeKit.m */,
 				500BE01E1EF795BA008F70A4 /* NSMutableDictionary+RuntimeKit.h */,
 				500BE01F1EF795BA008F70A4 /* NSMutableDictionary+RuntimeKit.m */,
+				5025A7401F074C7D00F0CBFC /* HKDeallocProxy.h */,
+				5025A7411F074C7D00F0CBFC /* HKDeallocProxy.m */,
+				509F82D61F0E3745002DBBC7 /* HKStubProxy.h */,
+				509F82D71F0E3745002DBBC7 /* HKStubProxy.m */,
 			);
 			path = HKRuntimeKit;
 			sourceTree = "<group>";
@@ -111,6 +133,8 @@
 		50392B561ED2872F00049647 /* OCResearch */ = {
 			isa = PBXGroup;
 			children = (
+				509F834A1F1340AE002DBBC7 /* HKProxy */,
+				509F82D91F0F463C002DBBC7 /* HKContainer */,
 				50260C001EF3C9E0003CD2A6 /* HKRuntimeKit */,
 				50392B5A1ED2872F00049647 /* AppDelegate.h */,
 				50392B5B1ED2872F00049647 /* AppDelegate.m */,
@@ -132,6 +156,28 @@
 				50392B581ED2872F00049647 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		509F82D91F0F463C002DBBC7 /* HKContainer */ = {
+			isa = PBXGroup;
+			children = (
+				509F82E31F0F476C002DBBC7 /* HKWeakArray.h */,
+				509F82E41F0F476C002DBBC7 /* HKWeakArray.m */,
+				509F82E61F0F477B002DBBC7 /* HKWeakDictionary.h */,
+				509F82E71F0F477B002DBBC7 /* HKWeakDictionary.m */,
+				509F82E91F0F4786002DBBC7 /* HKWeakSet.h */,
+				509F82EA1F0F4786002DBBC7 /* HKWeakSet.m */,
+			);
+			path = HKContainer;
+			sourceTree = "<group>";
+		};
+		509F834A1F1340AE002DBBC7 /* HKProxy */ = {
+			isa = PBXGroup;
+			children = (
+				509F834B1F1340C6002DBBC7 /* HKProxy.h */,
+				509F834C1F1340C6002DBBC7 /* HKProxy.m */,
+			);
+			path = HKProxy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,15 +253,21 @@
 			files = (
 				500BE01A1EF79598008F70A4 /* NSDictionary+RuntimeKit.m in Sources */,
 				50DD15F51EFD3B0D007C196C /* NSObject+AvoidCrash.m in Sources */,
+				509F82E51F0F476C002DBBC7 /* HKWeakArray.m in Sources */,
+				509F834D1F1340C6002DBBC7 /* HKProxy.m in Sources */,
 				500BE0171EF79584008F70A4 /* NSArray+RuntimeKit.m in Sources */,
 				500BE00B1EF628EC008F70A4 /* HKRuntimeKitCommonDefines.m in Sources */,
+				5025A7421F074C7D00F0CBFC /* HKDeallocProxy.m in Sources */,
 				500BE00E1EF62AAE008F70A4 /* HKRuntimeKitCore.m in Sources */,
+				509F82EB1F0F4786002DBBC7 /* HKWeakSet.m in Sources */,
 				500BE01D1EF795A9008F70A4 /* NSMutableArray+RuntimeKit.m in Sources */,
 				50A6DDF51ED2932C00D39B07 /* TempViewController.m in Sources */,
+				509F82E81F0F477B002DBBC7 /* HKWeakDictionary.m in Sources */,
 				500BE0201EF795BA008F70A4 /* NSMutableDictionary+RuntimeKit.m in Sources */,
 				50CEBE311EE97D0E003439B5 /* ConcurrentViewController.m in Sources */,
 				50392B5C1ED2872F00049647 /* AppDelegate.m in Sources */,
 				50392B591ED2872F00049647 /* main.m in Sources */,
+				509F82D81F0E3745002DBBC7 /* HKStubProxy.m in Sources */,
 				500BE0141EF7729B008F70A4 /* UIViewController+RuntimeKit.m in Sources */,
 				50260C031EF3CA00003CD2A6 /* UIImage+RuntimeKit.m in Sources */,
 			);
