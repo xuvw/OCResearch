@@ -9,6 +9,8 @@
 #import "TempViewController.h"
 #import "NSObject+AvoidCrash.h"
 
+#import "fishhook.h"
+
 NSString * printName(id self, SEL _cmd, NSString *oldName);
 
 @interface TempViewController ()

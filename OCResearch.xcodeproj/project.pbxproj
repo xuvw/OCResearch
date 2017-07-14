@@ -26,6 +26,10 @@
 		509F82EB1F0F4786002DBBC7 /* HKWeakSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 509F82EA1F0F4786002DBBC7 /* HKWeakSet.m */; };
 		509F834D1F1340C6002DBBC7 /* HKProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 509F834C1F1340C6002DBBC7 /* HKProxy.m */; };
 		50A6DDF51ED2932C00D39B07 /* TempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A6DDF41ED2932C00D39B07 /* TempViewController.m */; };
+		50C2CF261F174FA50024675A /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 50C2CF211F174FA50024675A /* fishhook.c */; };
+		50C2CF271F174FA50024675A /* fishhook.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 50C2CF231F174FA50024675A /* fishhook.podspec */; };
+		50C2CF281F174FA50024675A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 50C2CF241F174FA50024675A /* LICENSE */; };
+		50C2CF291F174FA50024675A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 50C2CF251F174FA50024675A /* README.md */; };
 		50CEBE311EE97D0E003439B5 /* ConcurrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50CEBE301EE97D0E003439B5 /* ConcurrentViewController.m */; };
 		50DD15F51EFD3B0D007C196C /* NSObject+AvoidCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DD15F41EFD3B0D007C196C /* NSObject+AvoidCrash.m */; };
 /* End PBXBuildFile section */
@@ -68,6 +72,11 @@
 		509F834C1F1340C6002DBBC7 /* HKProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKProxy.m; sourceTree = "<group>"; };
 		50A6DDF31ED2932C00D39B07 /* TempViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempViewController.h; sourceTree = "<group>"; };
 		50A6DDF41ED2932C00D39B07 /* TempViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempViewController.m; sourceTree = "<group>"; };
+		50C2CF211F174FA50024675A /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		50C2CF221F174FA50024675A /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		50C2CF231F174FA50024675A /* fishhook.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fishhook.podspec; sourceTree = "<group>"; };
+		50C2CF241F174FA50024675A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		50C2CF251F174FA50024675A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		50CEBE2F1EE97D0E003439B5 /* ConcurrentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcurrentViewController.h; sourceTree = "<group>"; };
 		50CEBE301EE97D0E003439B5 /* ConcurrentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcurrentViewController.m; sourceTree = "<group>"; };
 		50DD15F31EFD3B0D007C196C /* NSObject+AvoidCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AvoidCrash.h"; sourceTree = "<group>"; };
@@ -133,6 +142,7 @@
 		50392B561ED2872F00049647 /* OCResearch */ = {
 			isa = PBXGroup;
 			children = (
+				50C2CF201F174FA50024675A /* fishhook */,
 				509F834A1F1340AE002DBBC7 /* HKProxy */,
 				509F82D91F0F463C002DBBC7 /* HKContainer */,
 				50260C001EF3C9E0003CD2A6 /* HKRuntimeKit */,
@@ -178,6 +188,18 @@
 				509F834C1F1340C6002DBBC7 /* HKProxy.m */,
 			);
 			path = HKProxy;
+			sourceTree = "<group>";
+		};
+		50C2CF201F174FA50024675A /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				50C2CF211F174FA50024675A /* fishhook.c */,
+				50C2CF221F174FA50024675A /* fishhook.h */,
+				50C2CF231F174FA50024675A /* fishhook.podspec */,
+				50C2CF241F174FA50024675A /* LICENSE */,
+				50C2CF251F174FA50024675A /* README.md */,
+			);
+			path = fishhook;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +262,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				50392B671ED2872F00049647 /* LaunchScreen.storyboard in Resources */,
+				50C2CF271F174FA50024675A /* fishhook.podspec in Resources */,
+				50C2CF281F174FA50024675A /* LICENSE in Resources */,
 				50392B641ED2872F00049647 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,9 +278,11 @@
 				500BE01A1EF79598008F70A4 /* NSDictionary+RuntimeKit.m in Sources */,
 				50DD15F51EFD3B0D007C196C /* NSObject+AvoidCrash.m in Sources */,
 				509F82E51F0F476C002DBBC7 /* HKWeakArray.m in Sources */,
+				50C2CF291F174FA50024675A /* README.md in Sources */,
 				509F834D1F1340C6002DBBC7 /* HKProxy.m in Sources */,
 				500BE0171EF79584008F70A4 /* NSArray+RuntimeKit.m in Sources */,
 				500BE00B1EF628EC008F70A4 /* HKRuntimeKitCommonDefines.m in Sources */,
+				50C2CF261F174FA50024675A /* fishhook.c in Sources */,
 				5025A7421F074C7D00F0CBFC /* HKDeallocProxy.m in Sources */,
 				500BE00E1EF62AAE008F70A4 /* HKRuntimeKitCore.m in Sources */,
 				509F82EB1F0F4786002DBBC7 /* HKWeakSet.m in Sources */,
@@ -383,8 +409,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2LC6CE6H6L;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCResearch/fishhook",
+				);
 				INFOPLIST_FILE = OCResearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCResearch/FishhookLib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.max.mx.OCResearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -396,8 +431,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2LC6CE6H6L;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCResearch/fishhook",
+				);
 				INFOPLIST_FILE = OCResearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCResearch/FishhookLib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.max.mx.OCResearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
